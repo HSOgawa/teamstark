@@ -1,67 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Optimus Solutions</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/actions.js"></script>
+<title>Optimus Solutions</title>
 </head>
-<body>
-  <div class="container">
-    <header>
-      <div class="blog-header">
-        <div class="container">
-          <h1 class="blog-title">Optimus Solutions</h1>
-          <p class="lead blog-description">Como potencializar seu negócio?</p>
-        </div>
-      </div>
-    </header>
-    <main role="main" class="container">
-      <div class="row">
-        <div class="col-sm-8 blog-main">
-          <div class="blog-post">
-            <h2 class="blog-post-title">Supply Chain</h2>
-            <p>Quer saber mais? Inscreva-se e receba nosso e-book por e-mail</p>
-          </div>
-        </div>
-      </div>
-      <!-- @hogawa: parte dinâmica: estes elementos comunicam-se com o back-end -->
-      <div class="row">
-        <div class="col-sm-4 blog-form">
-          <input type="email" id="inputNome" class="form-control" placeholder="Nome completo" required="" autofocus="">
-          <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required="" autofocus="">
-        </div>
-      </div>
-      <div class="col-xs-12" style="height:10px;"></div>
-      <!-- Divisor -->
-      <div class="row">
-        <div class="col-sm-3 blog-form">
-          <button type="button" id="send" class="btn btn-lg btn-primary btn-block">Inscrever-se</button>
-        </div>
-      </div>
-      <!-- Parte dinâmica -->
-    </main>
-    <!-- Modal -->
-    <div class="modal fade" id="message" role="dialog">
-      <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Dados recebidos!</h4>
-          </div>
-          <div class="modal-body">
-            <p>Verifique sua caixa de e-mails</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
+<frameset rows="0,*" border="0">
+<frame name="header" scrolling="no" noresize target="main">
+<frame name="main" src="http://ec2-18-231-94-77.sa-east-1.compute.amazonaws.com">
+<noframes>
+<body></body>
+</noframes>
+</frameset>
 </html>
