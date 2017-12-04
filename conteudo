@@ -80,13 +80,13 @@
 
             <hr>
 
-            <a href="#" class="mt-4 link-post-title">Post 2 Title
+            <!-- <a href="#" class="mt-4 link-post-title">Post 2 Title
             <span class="link-post-subtitle">Post 2 Subtitle</span></a>
 
             <hr>
 
-            <a href="#" class="mt-4 link-post-title">Post 2 Title
-            <span class="link-post-subtitle">Post 2 Subtitle</span></a>
+            <a href="#" class="mt-4 link-post-title">Post 3 Title
+            <span class="link-post-subtitle">Post 2 Subtitle</span></a> -->
 
 
           </div>
