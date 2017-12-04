@@ -15,6 +15,6 @@ $(document).ready(function(){
                 //  $("#dialog").load('/form2.html', function() {
                       $("#dialog").dialog("open");
                  // });
-              })
+              });
               
 });
