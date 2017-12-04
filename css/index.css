@@ -4,19 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-post/blob/master/LICENSE)
  */
 
-/*body {
-
+body{
+ 	font-family: lato;
 }
 
-@media (min-width: 992px) {
-  body {
-  }
-}*/
-
-/*nav{
-	border-bottom: 1px solid #e0e0e0 !important;
-}
-*/
 h1.mt-4.post-title{
 	font-size: 3rem !important;
 	font-weight: 900;
@@ -75,5 +66,44 @@ footer{
 	background-color: #01579b;
 }
 
+p.m-0.text-center.text-white{
+	font-family: lato;
+}
+
+div.ebook{
+	width: 300;
+	height: 300;
+	background-color: #009688;
+	padding: 20px 0px 20px;
+	border-radius: 5px;
+}
+
+p#ebook-title{
+	color: #ffffff;
+	font-family: lato;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+p#ebook-description{
+	margin-left: 3%;
+	margin-right: 3%;
+	color: #ffffff;
+	font-family: lato;
+	font-size: 1.2rem;
+	text-align: left;
+}
+
+
+span#supply-chain{
+	display: grid;
+	font-weight: bold;
+	font-size: 1.6rem;
+
+}
+
+img.img-post{
+	padding: 20px 0px 30px;
+}
 
 
