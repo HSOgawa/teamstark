@@ -30,8 +30,25 @@ a.link-post-title{
     color: #002f6c;
 }
 
-a.link-post-title#hover{
-	
+a span.link-post-subtitle{
+	font-size: 1.5rem;
+	font-family: lato;
+	letter-spacing: -1px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: #002f6c;
+    display: grid;
+}
+
+a:hover {
+	color: #0277bd;
+	text-decoration: none;
+}
+
+a span:hover{
+	color: #0277bd;
+	text-decoration: none;
 }
 
 p.post-subtitle{
@@ -43,7 +60,6 @@ p.post-subtitle{
     padding: 0;
     color: #002f6c;
 }
-
 
 p.lead.post-content{
 	font-family: lato;
