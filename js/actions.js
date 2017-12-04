@@ -11,10 +11,10 @@ $(document).ready(function(){
             data: 'name='+name+'&email='+email,
             data: {name: name, email: email},
             success:function(result){
-                  document.getElementById("inputNome").reset();
-                  document.getElementById("inputEmail").reset();
+                 // document.getElementById("inputNome").reset();
+                //  document.getElementById("inputEmail").reset();
                   alert(result);
-                  Download(); //TODO: Function do download do ebook
+               //   Download(); //TODO: Function do download do ebook
             },
             error: function(){
                alert("Erro");
