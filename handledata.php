@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     else
     {
         $newUser="INSERT INTO table(nome,email,ip)
-        VALUES (NULL, '$users_name', '$users_email', $_SERVER['REMOTE_ADDR']);";
+        VALUES ('$users_name', '$users_email', $_SERVER['REMOTE_ADDR']);";
         if (mysqli_query($con,$newUser))
         {
            echo 'Data Was Posted Successfully<br/>';
