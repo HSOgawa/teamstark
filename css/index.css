@@ -76,6 +76,7 @@ div.ebook{
 	background-color: #009688;
 	padding: 20px 0px 20px;
 	border-radius: 5px;
+	overflow: scroll;
 }
 
 p#ebook-title{
