@@ -8,6 +8,7 @@ $(document).ready(function(){
             url:"handledata.php", 
             type: "POST",
             dataType: 'JSON',
+            data: 'name='+name+'&email='+email,
             data: {name: name, email: email},
             success:function(result){
                   document.getElementById("inputNome").reset();
