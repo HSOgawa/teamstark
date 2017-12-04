@@ -21,8 +21,8 @@ $(document).ready(function(){
             }
          
         //prevent form from submitting
-        return false;
+        //return false;
     });
-    req.console.error(function() { alert("Data not sent") });
+    //req.console.error(function() { alert("Data not sent") });
   });
 });
