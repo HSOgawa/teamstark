@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                die("Connection failed: " . mysqli_connect_error());
             }
 
+    $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $users_name = mysql_real_escape_string($_POST['name']);
     $users_email = mysql_real_escape_string($email);
