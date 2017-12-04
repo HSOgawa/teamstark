@@ -1,9 +1,23 @@
 $(document).ready(function(){
+    
+    $("#inputNome").blur(function() {
+            if (document.getElementById("inputNome").value == "")
+        alert("Nome vazio");
+});
+    $("#inputEmail").blur(function() {
+        if (document.getElementById("inputEmail").value == "")
+      alert("Email vazio");
+});
+    
     $("#send").click(function(){
       
       var name = document.getElementById("inputNome").value;
       var email = document.getElementById("inputEmail").value;
       
+        if (name == "" or email == "")
+            alert("Campos vazios");
+            else
+            {                
         $.ajax({
             url:"handledata.php", 
             type: "POST",
@@ -23,6 +37,7 @@ $(document).ready(function(){
         //prevent form from submitting
         //return false;
     });
+            }
     //req.console.error(function() { alert("Data not sent") });
   });
 });
