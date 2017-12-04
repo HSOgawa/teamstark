@@ -72,19 +72,11 @@
           <!-- Post Content Column -->
           <div class="col-lg-9">
 
-            <a href="/" class="mt-4 link-post-title">Supply Chain: tudo o que você precisa saber para transformar o seu negócio
-            <span class="link-post-subtitle"> Saiba o que é um Supply Chain e entenda como reduzir custos e como gerenciar melhor seus fornecedores, estoque, vendas e logística. </span></a>
+            <p class="lead post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <hr>
-
-            <a href="#" class="mt-4 link-post-title">Post 2 Title
-            <span class="link-post-subtitle">Post 2 Subtitle</span></a>
-
-            <hr>
-
-            <a href="#" class="mt-4 link-post-title">Post 2 Title
-            <span class="link-post-subtitle">Post 2 Subtitle</span></a>
-
+          
+            <p class="lead post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          
 
           </div>
 
