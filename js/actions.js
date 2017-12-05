@@ -6,9 +6,16 @@ $(document).ready(function(){
       var email = document.getElementById("inputEmail").value;
       
         if (name == "" || email == "")
-            alert("Campos vazios");
+        {            
+            if (name == "")
+               nomeErro.val() = "Por favor insira seu nome";
+            else if (email == "")
+               emailErro.val() = "Por favor insira seu e-mail";
+        }
             else
-            {                
+            {     
+                nomeErro.val() = "";
+                emailErro.val() = "";
         $.ajax({
             url:"handledata.php", 
             type: "POST",
