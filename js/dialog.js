@@ -1,7 +1,7 @@
 $(document).ready(function(){
               $("#content").dialog({
                   autoOpen: false,
-                  position: 'center' ,
+               //   position: 'center' ,
                   title: 'DOWNLOAD',
                   height: "auto",
                   width: "auto",
