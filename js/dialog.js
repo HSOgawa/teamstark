@@ -11,7 +11,7 @@ $(document).ready(function(){
               });
 
               //$("a.delete-href").click( function() {
-              $('.btn btn-danger').on('click', function () {
+              $("#ebook-btn").click( function () {
                 //  $("#dialog").load('/form2.html', function() {
                       $("#dialog").dialog("open");
                  // });
