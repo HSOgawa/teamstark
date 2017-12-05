@@ -3,19 +3,20 @@ $(document).ready(function(){
                   autoOpen: false,
                   position: 'center' ,
                   title: 'DOWNLOAD',
-                  draggable: false,
-                  width : 500,
-                  height : 500, 
+                  height: "auto",
+                  width: "auto",
                   resizable : false,
-                  modal : true,
-                my: "center",
-                at: "center",
-                of: window
+                  modal : true
               });
 
              $("#ebook-btn").click( function () {
                   $("#content").load('/form2.html', function() {
                       $("#content").dialog("open");
+                 });
+               $("#dialog").position({
+                          my: "center",
+                          at: "center",
+                          of: window
                  });
               });
               
