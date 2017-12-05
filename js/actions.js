@@ -14,7 +14,7 @@ $(document).ready(function(){
       var name = document.getElementById("inputNome").value;
       var email = document.getElementById("inputEmail").value;
       
-        if (name == "" or email == "")
+        if (name == "" || email == "")
             alert("Campos vazios");
             else
             {                
