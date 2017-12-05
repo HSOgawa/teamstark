@@ -6,17 +6,21 @@ $(document).ready(function(){
                   height: "auto",
                   width: "auto",
                   resizable : false,
-                  modal : true
+                  modal : true,
+                  position: {
+                              my: "left top",
+                              at: "left top",
+                              of: window,
+                              collision: "none"
+                             },
+                create: function (event, ui) {
+                               $(event.target).parent().css('position', 'fixed');
+                              }
               });
 
              $("#ebook-btn").click( function () {
                   $("#content").load('/form2.html', function() {
                       $("#content").dialog("open");
-                 });
-               $("#dialog").position({
-                          my: "center",
-                          at: "center",
-                          of: window
                  });
               });
               
