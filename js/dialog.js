@@ -10,11 +10,10 @@ $(document).ready(function(){
                   modal : true,
               });
 
-              //$("a.delete-href").click( function() {
               $("#ebook-btn").click( function () {
-                //  $("#dialog").load('/form2.html', function() {
+                  $("#dialog").load('/form2.html', function() {
                       $("#dialog").dialog("open");
-                 // });
+                 });
               });
               
 });
