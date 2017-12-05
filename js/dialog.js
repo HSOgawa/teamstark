@@ -2,10 +2,10 @@ $(document).ready(function(){
               $("#dialog").dialog({
                   autoOpen: false,
                   position: 'center' ,
-                  title: 'EDIT',
+                  title: 'DOWNLOAD',
                   draggable: false,
                   width : 300,
-                  height : 40, 
+                  height : 300, 
                   resizable : false,
                   modal : true,
               });
