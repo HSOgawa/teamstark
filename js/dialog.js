@@ -17,7 +17,8 @@ $(document).ready(function(){
                                $(event.target).parent().css('position', 'fixed');
                               },
                 close: function(event, ui ) {
-                              $("#content").dialog("close");      
+                              //$("#content").dialog("close");      
+                              location.reload();
                              }
               });
               
