@@ -11,7 +11,7 @@ $(document).ready(function(){
               });
 
               //$("a.delete-href").click( function() {
-              $('.conheca-ebook').on('click', function () {
+              $('.btn btn-danger').on('click', function () {
                 //  $("#dialog").load('/form2.html', function() {
                       $("#dialog").dialog("open");
                  // });
