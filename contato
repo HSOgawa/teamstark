@@ -10,9 +10,6 @@
 
       <title>Optimus Solutions</title>
 
-      <!-- Favicon-->
-      <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-
       <!-- Bootstrap core CSS -->
       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -48,19 +45,17 @@
                 <a class="nav-link" href="/">INÍCIO</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/conteudo.html">CONTEÚDO
+                <a class="nav-link" href="/conteudo">CONTEÚDO
                   <!-- <span class="sr-only">(current)</span> -->
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/sobre.html">SOBRE</a>
+                <a class="nav-link" href="/sobre">SOBRE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contato.html">CONTATO</a>
+                <a class="nav-link" href="/contato">CONTATO</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/optimussolutionssp/" target="_blank"><img src="images/facebook.png" width="30" height="30"></a>
-              </li>
+              <vr>
             </ul>
           </div>
         </div>
@@ -124,7 +119,6 @@
       <!-- Footer -->
       <footer class="py-5">
         <div class="container">
-           <center><a class="nav-link" href="https://www.facebook.com/optimussolutionssp/" target="_blank"><img src="images/facebook-branco.png" width="40" height="40"></a></center>
           <p class="m-0 text-center text-white">Copyright &copy; <b>Optimus Solutions</b> 2017</p>
         </div>
         <!-- /.container -->
