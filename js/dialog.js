@@ -4,10 +4,13 @@ $(document).ready(function(){
                   position: 'center' ,
                   title: 'DOWNLOAD',
                   draggable: false,
-                  width : 300,
-                  height : 300, 
+                  width : 500,
+                  height : 500, 
                   resizable : false,
                   modal : true,
+                my: "center",
+                at: "center",
+                of: window
               });
 
              $("#ebook-btn").click( function () {
