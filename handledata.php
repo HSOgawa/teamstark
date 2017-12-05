@@ -1,43 +1,23 @@
 <?php
-
-        // Only process POST reqeusts.
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    $con=mysqli_connect("localhost","root","","my_db");
-     Check connection
-            if (!$con) {
-               die("Connection failed: " . mysqli_connect_error());
-            }
-
-    $name = filter_var(trim($_POST["name"]), FILTER_SANITIZE_STRING);
-    $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $users_name = mysql_real_escape_string($_POST['name']);
-    $users_email = mysql_real_escape_string($email);
-
-     Check if there is any existing lead with the inputed email
-    $check="SELECT COUNT(*) FROM persons WHERE Email = '$users_email'";
-    $res = mysqli_query($con,$check);
-    $data = mysqli_fetch_array($res, MYSQLI_NUM);
-
-    if($data[0] > 1) {
-    {
-         echo 'User Already Exists<br/>';
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // connection to database
+    $servername = "localhost";
+    $username = "root";
+    // TODO: remove when pushing to Git
+    $password = "5$2dW2fAL1OnM";
+    $dbname = "teamstarkdb";
+    // create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // check connection
+    if ($conn->connect_error) {
+      die ("Connection failed: " . $conn->connect_error);
     }
-    else
-    {
-        $newUser="INSERT INTO table(nome,email,ip)
-        VALUES ('$users_name', '$users_email', $_SERVER['REMOTE_ADDR']);";
-        if (mysqli_query($con,$newUser))
-        {
-           echo 'Data Was Posted Successfully<br/>';
-        }
-        else
-        {
-          echo 'Error adding user in database<br/>';
-        }
-    }
-        
-    mysqli_close($con);    
-}
-
+    //--
+    $nome = $_REQUEST['nome'];
+    $email = $_REQUEST['email'];
+    $timestamp = date("Y-m-d H:i:s");
+    $query = "INSERT INTO leads VALUES ('".$nome."','".$email."','".$_SERVER['REMOTE_ADDR']."','".$timestamp."')";
+    $result = $conn->query($query);
+    $conn->close();
+  }
 ?>
