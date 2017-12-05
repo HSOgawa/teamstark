@@ -1,14 +1,5 @@
 $(document).ready(function(){
     
-    $("#inputNome").blur(function() {
-            if (document.getElementById("inputNome").value == "")
-        alert("Nome vazio");
-});
-    $("#inputEmail").blur(function() {
-        if (document.getElementById("inputEmail").value == "")
-      alert("Email vazio");
-});
-    
     $("#send").click(function(){
       
       var name = document.getElementById("inputNome").value;
