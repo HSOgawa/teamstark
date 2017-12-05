@@ -18,7 +18,7 @@ $(document).ready(function(){
                                                     document.getElementById("emailErro").textContent = "";
 
                                           $.post("../handledata.php",
-                                          {nome : nome.value, email : email.value})
+                                          {nome : name, email : email})
                                                   .done(function(data){
                                                     alert("Dados enviados");
                                                     window.location.href = "downloadpdf.php";
