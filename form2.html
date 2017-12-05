@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>  
   <script src="js/actions.js"></script>
 </head>
 <body>
@@ -31,8 +31,16 @@
       <!-- @hogawa: parte dinâmica: estes elementos comunicam-se com o back-end -->
       <div class="row">
         <div class="col-sm-4 blog-form">
-          <input type="email" id="inputNome" class="form-control" placeholder="Nome completo" required="" autofocus="">
-          <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required="" autofocus="">
+          <form id="userForm">
+            <input type="text" id="inputNome" class="form-control" placeholder="Nome completo">
+            <p>
+			<span id="nomeErro" style="color: red"></span>
+			</p>
+            <input type="text" id="inputEmail" class="form-control" placeholder="E-mail">
+			<p>
+            <span id="emailErro" style="color: red"></span>
+			</p>
+          </form>
         </div>
       </div>
       <div class="col-xs-12" style="height:10px;"></div>
