@@ -20,12 +20,6 @@ $(document).ready(function(){
                               $("#content").dialog("close");      
                              }
               });
-
-             $("#ebook-btn").click( function () {
-                  $("#content").load('/form2.html', function() {
-                      $("#content").dialog("open");
-                 });
-              });
               
   //     $("#ebook-btn").click( function () {
   //       $("#content-holder").load($(this).attr("/form2.html"));
@@ -33,3 +27,10 @@ $(document).ready(function(){
   //       return false;
   //   })
 });
+
+             //$("#ebook-btn").click( function () {
+              function openDialog() {
+                  $("#content").load('/form2.html', function() {
+                      $("#content").dialog("open");
+                 });
+              };
