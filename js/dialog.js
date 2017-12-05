@@ -1,5 +1,5 @@
 $(document).ready(function(){
-              $("#dialog").dialog({
+              $("#content").dialog({
                   autoOpen: false,
                   position: 'center' ,
                   title: 'DOWNLOAD',
@@ -10,10 +10,15 @@ $(document).ready(function(){
                   modal : true,
               });
 
-              $("#ebook-btn").click( function () {
-                  $("#dialog").load('/form2.html', function() {
-                      $("#dialog").dialog("open");
+             $("#ebook-btn").click( function () {
+                  $("#content").load('/form2.html', function() {
+                      $("#content").dialog("open");
                  });
               });
               
+  //     $("#ebook-btn").click( function () {
+  //       $("#content-holder").load($(this).attr("/form2.html"));
+  //       $("#content").dialog('open');
+  //       return false;
+  //   })
 });
