@@ -1,5 +1,24 @@
 $(document).ready(function(){
     
+  $("form[name='userForm']").validate({
+    rules: {
+      inputNome: "required",
+      inputEmail: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      inputNome: "Please enter your name",
+      inputEmail: "Please enter a valid email address"
+    },
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+});
+    
+    
     $("#send").click(function(){
       
       var name = document.getElementById("inputNome").value;
