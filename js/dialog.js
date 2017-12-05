@@ -15,7 +15,9 @@ $(document).ready(function(){
                              },
                 create: function (event, ui) {
                                $(event.target).parent().css('position', 'fixed');
-                              }
+                              },
+                close: function( event, ui ) {
+                        $("#content").dialog("close");       
               });
 
              $("#ebook-btn").click( function () {
