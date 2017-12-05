@@ -8,8 +8,8 @@ $(document).ready(function(){
                   resizable : false,
                   modal : true,
                   position: {
-                              my: "left top",
-                              at: "left top",
+                              my: "center",
+                              at: "center",
                               of: window,
                               collision: "none"
                              },
