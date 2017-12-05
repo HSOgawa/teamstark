@@ -21,15 +21,8 @@ $(document).ready(function(){
                               location.reload();
                              }
               });
-              
-  //     $("#ebook-btn").click( function () {
-  //       $("#content-holder").load($(this).attr("/form2.html"));
-  //       $("#content").dialog('open');
-  //       return false;
-  //   })
 });
 
-             //$("#ebook-btn").click( function () {
               function openDialog() {
                   $("#content").load('/form2.html', function() {
                       $("#content").dialog("open");
