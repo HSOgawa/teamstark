@@ -20,7 +20,21 @@
       <link href="css/index.css" rel="stylesheet">
 
       <!-- Font Lato -->
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />     
+      
+      <!-- jQuery UI -->
+      <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css"/>
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/fh-3.1.2/datatables.min.css"/>    
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/fh-3.1.2/datatables.min.js"></script>    
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script type='text/javascript' src="js/dialog.js"></script>
+      
+      <style>
+      #dialog {
+        display: none;
+      }
+    </style>
 
     </head>
 
@@ -103,7 +117,7 @@
 
             <p class="lead post-content">Segundo uma pesquisa realizada por consultorias internacionais, os problemas com a Supply Chain podem levar a uma queda de 9 a 20% nas margens dos produtos vendidos. Através dos levantamentos feitos por esta e outras pesquisas que as empresas perceberam que um bom gerenciamento da cadeia de suprimentos pode transformar o seu negócio.</p>
 
-            <a href="#" class="conheca-ebook">Para um estudo mais completo, baixe aqui o nosso e-book "Tudo sobre Supply Chain"!</a>
+            <a href="#" onclick="openDialog(); return false;" class="conheca-ebook">Para um estudo mais completo, baixe aqui o nosso e-book "Tudo sobre Supply Chain"!</a>
 
             <h2>Você reconhece alguns desses problemas?</h2>
             <p class="lead post-content">Entre os diversos tipos de problemas possíveis na cadeia de suprimentos listamos abaixo os principais:</p>
@@ -124,7 +138,7 @@
 
             <p class="lead post-content">Embora o caso acima seja de uma empresa grande, o uso do supply chain management é essencial para ajudar na sobrevivência no mercado.</p>
 
-            <a href="#" class="conheca-ebook">Para conhecer as soluções mais adequadas ao seu estilo de negócio, baixe aqui o nosso e-book "Tudo sobre Supply Chain"!</a>
+            <a href="#" onclick="openDialog(); return false;" class="conheca-ebook">Para conhecer as soluções mais adequadas ao seu estilo de negócio, baixe aqui o nosso e-book "Tudo sobre Supply Chain"!</a>
           </div>
 
           <!-- Sidebar Widgets Column -->
@@ -138,7 +152,7 @@
 
               <p id="ebook-description">Conheça as soluções para alavancar o seu negócio!</p>
 
-              <center><button type="submit" class="btn btn-danger">BAIXAR E-BOOK</button></center>
+              <center><button onclick="openDialog(); return false;" type="submit" class="btn btn-danger">BAIXAR E-BOOK</button></center>
               
             </div>
             </div>
@@ -162,8 +176,12 @@
       </footer>
 
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                
+        <!-- Dialog -->
+      <div id="content">
+      <div id="content-holder"></div>
+      </div>
 
     </body>
 

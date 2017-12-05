@@ -27,4 +27,5 @@ $(document).ready(function(){
                   $("#content").load('/form2.html', function() {
                       $("#content").dialog("open");
                  });
-};
+              };
+

@@ -4,7 +4,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $con=mysqli_connect("localhost","root","","my_db");
-    // Check connection
+     Check connection
             if (!$con) {
                die("Connection failed: " . mysqli_connect_error());
             }
@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $users_name = mysql_real_escape_string($_POST['name']);
     $users_email = mysql_real_escape_string($email);
 
-    // Check if there is any existing lead with the inputed email
+     Check if there is any existing lead with the inputed email
     $check="SELECT COUNT(*) FROM persons WHERE Email = '$users_email'";
     $res = mysqli_query($con,$check);
     $data = mysqli_fetch_array($res, MYSQLI_NUM);
