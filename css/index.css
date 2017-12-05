@@ -98,7 +98,7 @@ h2{
 	font-size: 2rem;
     font-weight: 700;
     line-height: 1.25;
-    margin: 40px 0px 10px;
+    margin: 50px 0px 10px;
 }
 
 a{
@@ -137,7 +137,6 @@ p#ebook-description{
 	text-align: left;
 }
 
-
 span#supply-chain{
 	display: grid;
 	font-weight: bold;
@@ -168,4 +167,11 @@ form{
 
 p.contato-text{
 	padding-top: 50px;
+}
+
+div.vl{
+	border-right: 1px solid #7f7f7f;
+    height: 50px;
+    padding-left: 20px;
+    margin-right: 20px;
 }
