@@ -8,14 +8,14 @@ $(document).ready(function(){
         if (name == "" || email == "")
         {            
             if (name == "")
-               nomeErro.val() = "Por favor insira seu nome";
-            else if (email == "")
-               emailErro.val() = "Por favor insira seu e-mail";
+               document.getElementById("nomeErro").textContent = "Por favor insira seu nome";
+            if (email == "")
+               document.getElementById("emailErro").textContent = "Por favor insira seu e-mail";
         }
             else
             {     
-                nomeErro.val() = "";
-                emailErro.val() = "";
+                document.getElementById("nomeErro").textContent = "";
+                document.getElementById("emailErro").textContent = "";
         $.ajax({
             url:"handledata.php", 
             type: "POST",
