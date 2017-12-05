@@ -113,6 +113,12 @@ p.m-0.text-center.text-white{
 	font-family: lato;
 }
 
+@media only screen and (min-width: 768px){
+	div.ebook1{
+		display: none !important;
+	}
+}
+
 div.ebook{
 	width: 300;
 	height: 300;
