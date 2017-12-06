@@ -24,14 +24,18 @@ function sendRequest(form) {
         }
     }
     else {
-        document.getElementById("nomeErro").textContent = "";
-        document.getElementById("emailErro").textContent = "";
-        document.getElementById("nomeErro2").textContent = "";
-        document.getElementById("emailErro2").textContent = "";
-        document.getElementById("inputNome").value = "";
-        document.getElementById("inputEmail").value = "";
-        document.getElementById("inputNome2").value = "";
-        document.getElementById("inputEmail2").value = "";
+        if (form == 1) {
+            document.getElementById("nomeErro").textContent = "";
+            document.getElementById("emailErro").textContent = "";
+            document.getElementById("inputNome").value = "";
+            document.getElementById("inputEmail").value = "";
+        }
+        else {
+            document.getElementById("nomeErro2").textContent = "";
+            document.getElementById("emailErro2").textContent = "";
+            document.getElementById("inputNome2").value = "";
+            document.getElementById("inputEmail2").value = "";
+        }
 
         $.post("../handledata.php",
         { nome: name, email: email })

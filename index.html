@@ -1,202 +1,158 @@
-  <!DOCTYPE html>
-  <html lang="en">
-
-    <head>
-
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="">
-      <meta name="author" content="">
-
-      <title>Optimus Solutions</title>
-      
-      <!-- Favicon-->
-      <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-      
-      <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-      <!-- Custom styles for this template -->
-      <link href="css/index.css" rel="stylesheet">
-
-      <!-- Font Lato -->
-      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />     
-      
-      <!-- jQuery UI -->
-      <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-      <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css"/>
-      <script type='text/javascript' src="js/dialog.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      
-      <style>
-      #content {
-        display: none;
-      }
-    </style>
-
-    </head>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Optimus Solutions</title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+    <!-- Font Lato -->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/actions.js"></script>
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110558278-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-110558278-1');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-110558278-1');
 </script>
-
-    <body>
-
-      <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-faded">
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-faded">
         <div class="container">
-          <a class="navbar-brand" href="/"><img src="images/logo.png" height="62" width="112"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/">INÍCIO</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/conteudo.html">CONTEÚDO
-                  <!-- <span class="sr-only">(current)</span> -->
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/sobre.html">SOBRE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/contato.html" >CONTATO</a>
-              </li>
-              <div class="vl"></div>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.facebook.com/optimussolutionssp/" target="_blank"><img src="images/facebook.png" width="30" height="30"></a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="/"><img src="images/logo.png" height="62" width="112"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">INÍCIO</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/conteudo.html">
+                            CONTEÚDO
+                            <!-- <span class="sr-only">(current)</span> -->
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre.html">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contato.html">CONTATO</a>
+                    </li>
+                    <div class="vl"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/optimussolutionssp/" target="_blank"><img src="images/facebook.png" width="30" height="30"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
-
-      <div class="blog-second-nav">
+    </nav>
+    <div class="blog-second-nav">
         <div class="container">
-          <h1 class="blog-title">Blog de Supply Chain</h1>
+            <h1 class="blog-title">Blog de Supply Chain</h1>
         </div>
-      </div>
+    </div>
 
-
-        
-        
-      <!-- Page Content -->
-      <div class="container">
-        
+    <!-- Page Content -->
+    <div class="container">
         <div class="row all-content">
-          
-        <div class="ebook1 ebook">
-              <div class="container">
-              <center><img src="images/moto-boy.png" height="130" width="180"></center>
-
-              <p id="ebook-title">O E-book de <span id="supply-chain">Supply Chain</span></p>
-
-              <p id="ebook-description">Conheça as soluções para alavancar o seu negócio!</p>
-
-              <center><button type="submit" onclick="openDialog(); return false;" class="btn btn-danger">BAIXAR E-BOOK</button></center>
-              
+            <!-- Post Content Column -->
+            <div class="col-lg-9">
+                <!-- Title -->
+                <h1 class="mt-4 post-title">Supply Chain: tudo o que você precisa saber para transformar o seu negócio</h1>
+                <p class="lead post-subtitle"> Saiba o que é um Supply Chain e entenda como reduzir custos e como gerenciar melhor seus fornecedores, estoque, vendas e logística. </p>
+                <hr>
+                <!-- Post Content -->
+                <h2>O que é supply chain?</h2>
+                <p class="lead post-content">É a <b>cadeia de suprimentos</b> que pode ser definida como um sistema de organizações, pessoas, atividades, informações e recursos envolvidos desde a <b>fabricação até a entrega final</b> do produto ou serviço ao cliente.</p>
+                <p class="lead post-content">Independente do porte do seu negócio, ou do tipo de serviço prestado, sempre existirá uma cadeia de suprimentos. Ela pode ser simples, considerando apenas o seu negócio, clientes e fornecedores. E pode ser mais complexa, levando em consideração fornecedores de fornecedores, representantes, provedores de serviços terceirizados e intermediários em geral, entre outros.</p>
+                <!-- Preview Image -->
+                <!-- <img class="img-fluid rounded img-post" src="http://placehold.it/900x300" alt=""> -->
+                <h2>O que é supply chain management?</h2>
+                <p class="lead post-content">O conceito de Supply Chain Management (SCM), também conhecido como gerenciamento de cadeia de suprimentos, evoluiu de forma natural a partir do conceito de logística e visa garantir a integração eficaz e otimização de todos os fluxos internos e processos da cadeia de compras, produção, estoque, logística e vendas.</p>
+                <p class="lead post-content">Segundo uma pesquisa realizada por consultorias internacionais, os problemas com a Supply Chain podem levar a uma queda de 9 a 20% nas margens dos produtos vendidos. Através dos levantamentos feitos por esta e outras pesquisas que as empresas perceberam que um bom gerenciamento da cadeia de suprimentos pode transformar o seu negócio.</p>
+                <!-- Middle Form -->
+                <div class="col-md-3">
+                    <div class="ebook">
+                        <div class="container">
+                            <p id="ebook-title">Conheça as soluções para alavancar o seu negócio!</p>
+                            <div>
+                                Nome Completo:* <input type="text" id="inputNome" name="nome" class="form-control">
+                                <span id="nomeErro" style="color: white" style="height:20px;"></span>
+                            </div>
+                            <br>
+                            <div>
+                                Email:* <input type="email" id="inputEmail" name="email" class="form-control">
+                                <span id="emailErro" style="color: white" style="height:20px;"></span>
+                            </div>
+                            <br>
+                            <div class="col-xs-12" style="height:10px;"></div>
+                            <center><button type="submit" onclick="sendRequest(1); return false;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">BAIXAR E-BOOK</button></center>
+                        </div>
+                    </div>
+                </div>
+                <h2>Você reconhece alguns desses problemas?</h2>
+                <p class="lead post-content">Entre os diversos tipos de problemas possíveis na cadeia de suprimentos listamos abaixo os principais:</p>
+                <ul>
+                    <li>Não conheço meus gastos: Com vários departamentos comprando de forma desestruturada torna-se difícil saber quanto tempo e dinheiro é gasto.</li>
+                    <li>Processos ineficientes: Sem processos estruturados e ferramentas de gestão da cadeia de suprimentos, atividades repetidas ou desnecessárias, além de funções extremamente burocráticas podem passar despercebidas e consumir de forma ineficiente tempo da equipe.</li>
+                    <li>Falta de atenção a potenciais riscos: A incapacidade de mapear riscos e desenvolver estratégias para mitigá-los pode prejudicar nos lucros e até a sobrevivência de um negócio.</li>
+                    <li>Desconhecimento da base de fornecedores: muitas empresas pequenas não levam em consideração o quanto parceiros são importantes para seus negócios. </li>
+                    <li>Ignorar inovações tecnológicas: é comum se sentir inseguro para adotar inovações tecnológicas mais complexas sem um suporte especializado.</li>
+                </ul>
+                <h2>Benefícios de utilizar Supply Chain Management</h2>
+                <p class="lead post-content">Entenda no vídeo abaixo como aumentar a eficiência no gerenciamento da supply chain pode impactar no desempenho de um negócio:</p>
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/6kEurPCQmOo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></center>
+                <p class="lead post-content">Embora o caso acima seja de uma empresa grande, o uso do supply chain management é essencial para ajudar na sobrevivência no mercado.</p>
             </div>
-        </div>
-
-
-          <!-- Post Content Column -->
-          <div class="col-lg-9">
-
-            <!-- Title -->
-            <h1 class="mt-4 post-title">Supply Chain: tudo o que você precisa saber para transformar o seu negócio</h1>
-
-            <p class="lead post-subtitle"> Saiba o que é um Supply Chain e entenda como reduzir custos e como gerenciar melhor seus fornecedores, estoque, vendas e logística. </p>
-
-            <hr>
-
-            <!-- Post Content -->
-            <h2>O que é supply chain?</h2>
-
-            <p class="lead post-content">É a <b>cadeia de suprimentos</b> que pode ser definida como um sistema de organizações, pessoas, atividades, informações e recursos envolvidos desde a <b>fabricação até a entrega final</b> do produto ou serviço ao cliente.</p>
-
-            <p class="lead post-content">Independente do porte do seu negócio, ou do tipo de serviço prestado, sempre existirá uma cadeia de suprimentos. Ela pode ser simples, considerando apenas o seu negócio, clientes e fornecedores. E pode ser mais complexa, levando em consideração fornecedores de fornecedores, representantes, provedores de serviços terceirizados e intermediários em geral, entre outros.</p>
-
-            <!-- Preview Image -->
-            <!-- <img class="img-fluid rounded img-post" src="http://placehold.it/900x300" alt=""> -->
-
-            <h2>O que é supply chain management?</h2>
-            <p class="lead post-content">O conceito de Supply Chain Management (SCM), também conhecido como gerenciamento de cadeia de suprimentos, evoluiu de forma natural a partir do conceito de logística e visa garantir a integração eficaz e otimização de todos os fluxos internos e processos da cadeia de compras, produção, estoque, logística e vendas.</p>
-
-            <p class="lead post-content">Segundo uma pesquisa realizada por consultorias internacionais, os problemas com a Supply Chain podem levar a uma queda de 9 a 20% nas margens dos produtos vendidos. Através dos levantamentos feitos por esta e outras pesquisas que as empresas perceberam que um bom gerenciamento da cadeia de suprimentos pode transformar o seu negócio.</p>
-
-            <a href="#" onclick="openDialog(); return false;" class="conheca-ebook">Para um estudo mais completo, baixe aqui o nosso e-book "Tudo sobre Supply Chain"!</a>
-
-            <h2>Você reconhece alguns desses problemas?</h2>
-            <p class="lead post-content">Entre os diversos tipos de problemas possíveis na cadeia de suprimentos listamos abaixo os principais:</p>
-
-            <ul>
-              <li>Não conheço meus gastos: Com vários departamentos comprando de forma desestruturada torna-se difícil saber quanto tempo e dinheiro é gasto.</li>
-              <li>Processos ineficientes: Sem processos estruturados e ferramentas de gestão da cadeia de suprimentos, atividades repetidas ou desnecessárias, além de funções extremamente burocráticas podem passar despercebidas e consumir de forma ineficiente tempo da equipe.</li>
-              <li>Falta de atenção a potenciais riscos: A incapacidade de mapear riscos e desenvolver estratégias para mitigá-los pode prejudicar nos lucros e até a sobrevivência de um negócio.</li>
-              <li>Desconhecimento da base de fornecedores: muitas empresas pequenas não levam em consideração o quanto parceiros são importantes para seus negócios. </li>
-              <li>Ignorar inovações tecnológicas: é comum se sentir inseguro para adotar inovações tecnológicas mais complexas sem um suporte especializado.</li>
-            </ul>
-            
-
-            <h2>Benefícios de utilizar Supply Chain Management</h2>
-            <p class="lead post-content">Entenda no vídeo abaixo como aumentar a eficiência no gerenciamento da supply chain pode impactar no desempenho de um negócio:</p>
-
-            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/6kEurPCQmOo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe></center>
-
-            <p class="lead post-content">Embora o caso acima seja de uma empresa grande, o uso do supply chain management é essencial para ajudar na sobrevivência no mercado.</p>
-
-            <a href="#" onclick="openDialog(); return false;" class="conheca-ebook">Para conhecer as soluções mais adequadas ao seu estilo de negócio, baixe aqui o nosso e-book "Tudo sobre Supply Chain"!</a>
-          </div>
-
-          <!-- Sidebar Widgets Column -->
-          <div class="col-md-3">
-
-            <div class="ebook">
-              <div class="container">
-              <center><img src="images/moto-boy.png" height="130" width="180"></center>
-
-              <p id="ebook-title">O E-book de <span id="supply-chain">Supply Chain</span></p>
-
-              <p id="ebook-description">Conheça as soluções para alavancar o seu negócio!</p>
-
-              <center><button onclick="openDialog(); return false;" type="submit" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">BAIXAR E-BOOK</button></center>
-              
+            <!-- Sidebar Widgets Column -->
+            <div class="col-md-3">
+                <div class="ebook">
+                    <div class="container">
+                        <center><img src="images/moto-boy.png" height="130" width="180"></center>
+                        <p id="ebook-title">Conheça as soluções para alavancar o seu negócio!</p>
+                        <div>
+                            Nome Completo:* <input type="text" id="inputNome2" name="nome" class="form-control">
+                            <span id="nomeErro2" style="color: white" style="height:20px;"></span>
+                        </div>
+                        <br>
+                        <div>
+                            Email:* <input type="email" id="inputEmail2" name="email" class="form-control">
+                            <span id="emailErro2" style="color: white" style="height:20px;"></span>
+                        </div>
+                        <br>
+                        <div class="col-xs-12" style="height:10px;"></div>
+                        <center><button type="submit" onclick="sendRequest(2); return false;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">BAIXAR E-BOOK</button></center>
+                    </div>
+                </div>
             </div>
-            </div>
-
-          </div>
-
         </div>
         <!-- /.row -->
-
-      </div>
-      <!-- /.container -->
-
-      <!-- Footer -->
-      <footer class="py-5">
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="py-5">
         <div class="container">
-          <center><a class="nav-link" href="https://www.facebook.com/optimussolutionssp/" target="_blank"><img src="images/facebook-branco.png" width="40" height="40"></a></center>
-
-          <p class="m-0 text-center text-white">Copyright &copy; <b>Optimus Solutions</b> 2017</p>
+            <center><a class="nav-link" href="https://www.facebook.com/optimussolutionssp/" target="_blank"><img src="images/facebook-branco.png" width="40" height="40"></a></center>
+            <p class="m-0 text-center text-white">Copyright &copy; <b>Optimus Solutions</b> 2017</p>
         </div>
         <!-- /.container -->
-      </footer>
-                
-        <!-- Dialog -->
-      <div id="content">
-      </div>
-
-    </body>
-
-  </html>
-
+    </footer>
+</body>
+</html>
