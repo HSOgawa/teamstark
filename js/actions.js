@@ -23,9 +23,8 @@ $(document).ready(function(){
                                                     alert("Dados enviados");
                                                     window.location.href = "downloadpdf.php";
                                                   });
-                                        });
                             }
                         //req.console.error(function() { alert("Data not sent") });
           });
-    
 });
+
