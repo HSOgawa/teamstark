@@ -1,12 +1,13 @@
 $(document).ready(function(){
               $("#content").dialog({
                   autoOpen: false,
-               //   position: 'center' ,
-                  title: 'DOWNLOAD',
-                  height: "350",
-                  width: "350",
+                  position: 'center' ,
+                  title: 'Optimus Solutions',
+                  height: "500",
+                  width: "600",
                   resizable : false,
-                  modal : true,
+                  modal: true,
+                  overflow: false,
                   position: {
                               my: "center",
                               at: "center",
