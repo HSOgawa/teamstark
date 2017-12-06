@@ -3,7 +3,7 @@ function openDialog() {
                   autoOpen: false,
                   position: 'center' ,
                   title: 'Optimus Solutions',
-                  height: "100%",
+                  height: "500",
                   width: "100%",
                   resizable : false,
                   modal: true,
