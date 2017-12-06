@@ -15,24 +15,27 @@
 	  
 </head>
 <body>
-  <div>
-		            <form>
-            Nome Completo:<br>
-  			<input type="text" id="inputNome" name="nome"><br>
-
+  <div class="container">
+    <hr>
+		<form>
+      <div class="row">
+      <div class="col-lg-6">
+      Nome Completo:* <input type="text" id="inputNome" name="nome" class="form-control">
 			<span id="nomeErro" style="color: red"></span>
+      </div>
+      </div>
 			<br>
-  			Email:<br>
-  			<input type="email" id="inputEmail" name="email">
-			<br>
+      <div class="row">
+      <div class="col-lg-6">
+  		Email:* <input type="email" id="inputEmail" name="email" class="form-control">
 			<span id="emailErro" style="color: red"></span>
-          </form>
-</div>
+        </div>
+      </div>
+    </form>
+  </div>
       <div class="col-xs-12" style="height:10px;"></div>
-      <!-- Divisor -->
-      <!--div class="row"-->
         <div>
-          <button type="button" id="send" class="btn btn-lg btn-primary btn-block">Receber</button>
+          <center><button type="button" id="send" class="btn btn-primary btn-block btn-lg">RECEBER MATERIAL</button></center>
         </div>
 
       </div>
