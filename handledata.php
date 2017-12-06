@@ -4,8 +4,8 @@
     $servername = "localhost";
     $username = "root";
     // TODO: remove when pushing to Git
-    $password = "5$2dW2fAL1OnM";
-    $dbname = "teamstarkdb";
+    $password = "";
+    $dbname = "";
     // create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
     // check connection
