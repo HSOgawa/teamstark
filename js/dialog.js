@@ -3,8 +3,8 @@ $(document).ready(function(){
                   autoOpen: false,
                //   position: 'center' ,
                   title: 'DOWNLOAD',
-                  height: "auto",
-                  width: "auto",
+                  height: "350",
+                  width: "350",
                   resizable : false,
                   modal : true,
                   position: {
