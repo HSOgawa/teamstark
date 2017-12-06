@@ -20,11 +20,11 @@ $(document).ready(function(){
                                           $.post("../handledata.php",
                                           {nome : name, email : email})
                                                   .done(function(data){
-                                                    alert("Dados enviados");
                                                     window.location.href = "downloadpdf.php";
+													window.setTimeout(function(){location.reload();}, 2000);
                                                   });
                             }
-                        //req.console.error(function() { alert("Data not sent") });
+                        return false;
           });
 });
 
