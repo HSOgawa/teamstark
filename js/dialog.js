@@ -4,7 +4,7 @@ function openDialog() {
                   position: 'center' ,
                   title: 'Optimus Solutions',
                   height: "500",
-                  width: "600",
+                  width: "75%",
                   resizable : false,
                   modal: true,
                   overflow: false,
