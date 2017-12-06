@@ -1,10 +1,10 @@
-$(document).ready(function(){
+function openDialog() {
               $("#content").dialog({
                   autoOpen: false,
                   position: 'center' ,
                   title: 'Optimus Solutions',
                   height: "500",
-                  width: "600",
+                  width: "75%",
                   resizable : false,
                   modal: true,
                   overflow: false,
@@ -22,11 +22,9 @@ $(document).ready(function(){
                               location.reload();
                              }
               });
-});
 
-              function openDialog() {
-                  $("#content").load('/form2.html', function() {
-                      $("#content").dialog("open");
-                 });
-              };
+			$("#content").load('/form2.html', function() {
+				$("#content").dialog("open");
+			});
+};
 
