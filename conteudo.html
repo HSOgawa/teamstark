@@ -30,13 +30,7 @@
       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/fh-3.1.2/datatables.min.css"/>    
       <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-2.2.3/dt-1.10.12/fh-3.1.2/datatables.min.js"></script>    
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      <script type='text/javascript' src="js/dialog.js"></script>
-      
-      <style>
-      #dialog {
-        display: none;
-      }
-      </style>
+      <script type='text/javascript' src="js/actions.js"></script>
 
     </head>
 
@@ -113,22 +107,26 @@
           </div>
 
           <!-- Sidebar Widgets Column -->
-          <div class="col-md-3">
-
-            <div class="ebook">
-              <div class="container">
-              <center><img src="images/moto-boy.png" height="130" width="180"></center>
-
-              <p id="ebook-title">O E-book de <span id="supply-chain">Supply Chain</span></p>
-
-              <p id="ebook-description">Conheça as soluções para alavancar o seu negócio!</p>
-
-              <center><button onclick="openDialog(); return false;" type="submit" class="btn btn-danger">BAIXAR E-BOOK</button></center>
-              
+            <div class="col-md-3">
+                <div class="ebook">
+                    <div class="container">
+                        <center><img src="images/moto-boy.png" height="130" width="180"></center>
+                        <p id="ebook-title">Conheça as soluções para alavancar o seu negócio!</p>
+                        <div>
+                            Nome Completo:* <input type="text" id="inputNome2" name="nome" class="form-control">
+                            <span id="nomeErro2" style="color: white" style="height:20px;"></span>
+                        </div>
+                        <br>
+                        <div>
+                            Email:* <input type="email" id="inputEmail2" name="email" class="form-control">
+                            <span id="emailErro2" style="color: white" style="height:20px;"></span>
+                        </div>
+                        <br>
+                        <div class="col-xs-12" style="height:10px;"></div>
+                        <center><button type="submit" onclick="sendRequest(2); return false;" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">BAIXAR E-BOOK</button></center>
+                    </div>
+                </div>
             </div>
-            </div>
-
-          </div>
 
         </div>
         <!-- /.row -->
@@ -145,11 +143,6 @@
         <!-- /.container -->
       </footer>
 
-      
-      <!-- Dialog -->
-      <div id="content">
-          <div id="content-holder"></div>
-      </div>
 
     </body>
 
