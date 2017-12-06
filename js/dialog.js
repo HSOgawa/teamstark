@@ -1,4 +1,4 @@
-$(document).ready(function(){
+function openDialog() {
               $("#content").dialog({
                   autoOpen: false,
                   position: 'center' ,
@@ -22,11 +22,9 @@ $(document).ready(function(){
                               location.reload();
                              }
               });
-});
 
-              function openDialog() {
-                  $("#content").load('/form2.html', function() {
-                      $("#content").dialog("open");
-                 });
-              };
+			$("#content").load('/form2.html', function() {
+				$("#content").dialog("open");
+			});
+};
 
