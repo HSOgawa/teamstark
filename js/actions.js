@@ -1,30 +1,43 @@
-$(document).ready(function(){
-    
-            $("#send").click(function(){
+function sendRequest(form) {
 
-                          var name = document.getElementById("inputNome").value;
-                          var email = document.getElementById("inputEmail").value;
+    if (form == 1) {
+        var name = document.getElementById("inputNome").value;
+        var email = document.getElementById("inputEmail").value;
+    }
+    else {
+        var name = document.getElementById("inputNome2").value;
+        var email = document.getElementById("inputEmail2").value;
+    }
 
-                            if (name == "" || email == "")
-                            {            
-                                if (name == "")
-                                   document.getElementById("nomeErro").textContent = "Por favor insira seu nome";
-                                if (email == "")
-                                   document.getElementById("emailErro").textContent = "Por favor insira seu e-mail";
-                            }
-                                else
-                            {     
-                                                    document.getElementById("nomeErro").textContent = "";
-                                                    document.getElementById("emailErro").textContent = "";
+    if (name == "" || email == "") {
+        if (name == "") {
+            if (form == 1)
+                document.getElementById("nomeErro").textContent = "Por favor insira seu nome";
+            else
+                document.getElementById("nomeErro2").textContent = "Por favor insira seu nome";
+        }
+        if (email == "") {
+            if (form == 1)
+                document.getElementById("emailErro").textContent = "Por favor insira seu e-mail";
+            else
+                document.getElementById("emailErro2").textContent = "Por favor insira seu e-mail";
+        }
+    }
+    else {
+        document.getElementById("nomeErro").textContent = "";
+        document.getElementById("emailErro").textContent = "";
+        document.getElementById("nomeErro2").textContent = "";
+        document.getElementById("emailErro2").textContent = "";
+        document.getElementById("inputNome").value = "";
+        document.getElementById("inputEmail").value = "";
+        document.getElementById("inputNome2").value = "";
+        document.getElementById("inputEmail2").value = "";
 
-                                          $.post("../handledata.php",
-                                          {nome : name, email : email})
-                                                  .done(function(data){
-                                                    window.location.href = "downloadpdf.php";
-													window.setTimeout(function(){location.reload();}, 2000);
-                                                  });
-                            }
-                        return false;
-          });
-});
-
+        $.post("../handledata.php",
+        { nome: name, email: email })
+                .done(function (data) {
+                    window.location.href = "downloadpdf.php";
+                });
+    }
+    return false;
+};
