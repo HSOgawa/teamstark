@@ -67,6 +67,13 @@ p.lead.post-content{
 	font-size: 1.1rem;
 }
 
+p.lead.post-content-sobre{
+	font-family: lato;
+	font-weight: 100 !important;
+	font-size: 1.3rem;
+	padding: 10px 10px 10px;
+}
+
 label{
 	font-family: lato;
 	font-weight: 100 !important;
@@ -139,21 +146,22 @@ p#ebook-description{
 	color: #ffffff;
 	font-family: lato;
 	font-size: 1.2rem;
-	text-align: left;
+	text-align: center;
 }
 
 p#ebook-description2{
 	color: #ffffff;
 	font-family: lato;
-	font-size: 1rem;
+	font-size: 1.1rem;
 	text-align: center;
+	margin-top: 10px;
 }
 
 span#supply-chain{
 	display: grid;
 	font-weight: bold;
 	font-size: 1.6rem;
-
+	text-align: center;
 }
 
 img.img-post{
