@@ -218,3 +218,21 @@ div.form-label{
 	color: white;
 	font-family: lato;
 }
+
+span.categoria-usuario{
+	display: block;
+}
+
+div.form-check{
+	font: lato;
+	color: white;
+}
+
+label.form-check-label{
+	font: lato;
+	color: white;
+}
+
+label{
+	font-size: 1rem;
+}
