@@ -74,6 +74,14 @@ p.lead.post-content-sobre{
 	padding: 10px 10px 10px;
 }
 
+
+p.lead.post-content-index{
+	font-family: lato;
+	font-weight: 100 !important;
+	font-size: 1.3rem;
+	padding: 10px 10px 10px;
+}
+
 label{
 	font-family: lato;
 	font-weight: 100 !important;
@@ -235,4 +243,8 @@ label.form-check-label{
 
 label{
 	font-size: 1rem;
+}
+
+a#saiba-mais{
+	margin-top: 40px;
 }
