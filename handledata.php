@@ -16,7 +16,8 @@
     $nome = $_REQUEST['nome'];
     $email = $_REQUEST['email'];
     $timestamp = date("Y-m-d H:i:s");
-    $query = "INSERT INTO leads VALUES ('".$nome."','".$email."','".$_SERVER['REMOTE_ADDR']."','".$timestamp."')";
+	$categoria = $_REQUEST['categoria'];
+    $query = "INSERT INTO leads VALUES ('".$nome."','".$email."','".$_SERVER['REMOTE_ADDR']."','".$timestamp."','".$categoria."')";
     $result = $conn->query($query);
     $conn->close();
   }
